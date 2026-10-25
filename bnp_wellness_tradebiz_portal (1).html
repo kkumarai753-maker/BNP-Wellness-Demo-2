@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BNP Wellness | Groundbreaking Medical Innovations | BNP Tradebiz</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+            },
+            medical: {
+              teal: '#0d9488',
+              emerald: '#059669',
+              dark: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom glow & glass effects */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(2, 132, 199, 0.35);
+    }
+    .pattern-grid {
+      background-image: radial-gradient(rgba(2, 132, 199, 0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    /* Animation pulse for live status badge */
+    @keyframes subtlePulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.03); }
+    }
+    .pulse-subtle {
+      animation: subtlePulse 3s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ================= TOP CONTACT BAR ================= -->
+  <header class="bg-brand-900 text-slate-200 text-xs py-2 px-4 border-b border-brand-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+        <a href="mailto:bnpwellness@gmail.com" class="hover:text-sky-300 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-envelope text-sky-400"></i> bnpwellness@gmail.com
+        </a>
+        <a href="tel:+919960097111" class="hover:text-sky-300 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-sky-400"></i> +91 99600 97111
+        </a>
+        <span class="hidden md:inline-flex items-center text-slate-300">
+          <i class="fa-regular fa-clock mr-1.5 text-sky-400"></i> Mon - Sat: 10:00 AM - 6:00 PM
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-sky-300 font-medium hidden lg:inline">Nagpur • Pune • Delhi</span>
+        <div class="flex items-center space-x-3 text-slate-300">
+          <a href="#" class="hover:text-white transition-colors" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-white transition-colors" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="hover:text-white transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-white transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= PRIMARY NAVIGATION ================= -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-sky-500 flex items-center justify-center text-white shadow-md shadow-sky-600/30 group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-heart-pulse text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900">BNP</span>
+              <span class="font-display font-extrabold text-2xl tracking-tight text-brand-600">WELLNESS</span>
+            </div>
+            <p class="text-[10px] font-medium tracking-widest uppercase text-slate-400 -mt-1">A Division of BNP Tradebiz</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+          <a href="#home" class="hover:text-brand-600 transition-colors">Home</a>
+          <a href="#about" class="hover:text-brand-600 transition-colors">About Us</a>
+          
+          <!-- Dropdown for Products -->
+          <div class="relative group py-2">
+            <button class="flex items-center gap-1.5 hover:text-brand-600 focus:outline-none">
+              <span>Medical Innovations</span>
+              <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="absolute left-0 mt-2 w-72 bg-white rounded-2xl shadow-xl border border-slate-100 p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <a href="#products" onclick="filterProducts('all')" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-sky-50 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center"><i class="fa-solid fa-layer-group text-sm"></i></div>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">All Devices & Solutions</div>
+                  <div class="text-[11px] text-slate-400">View complete product range</div>
+                </div>
+              </a>
+              <a href="#products" onclick="filterProducts('urology')" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-sky-50 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center"><i class="fa-solid fa-microscope text-sm"></i></div>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">FlowComp-NG & Urocomp</div>
+                  <div class="text-[11px] text-slate-400">Advanced Urodynamics & Flow</div>
+                </div>
+              </a>
+              <a href="#products" onclick="filterProducts('oncology')" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-sky-50 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center"><i class="fa-solid fa-dna text-sm"></i></div>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Permeos ECT System</div>
+                  <div class="text-[11px] text-slate-400">Electro-chemotherapy tool</div>
+                </div>
+              </a>
+              <a href="#products" onclick="filterProducts('womens-health')" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-sky-50 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-pink-100 text-pink-600 flex items-center justify-center"><i class="fa-solid fa-venus text-sm"></i></div>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Cervaical & Breast Exam</div>
+                  <div class="text-[11px] text-slate-400">Preventive smart diagnostics</div>
+                </div>
+              </a>
+              <a href="#products" onclick="filterProducts('neonatal')" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-sky-50 transition-colors">
+                <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center"><i class="fa-solid fa-baby text-sm"></i></div>
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Giggles Phototherapy</div>
+                  <div class="text-[11px] text-slate-400">Neonatal eye protection care</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="#technology" class="hover:text-brand-600 transition-colors">R&D & Quality</a>
+          <a href="#careers" class="hover:text-brand-600 transition-colors">Careers</a>
+          <a href="#contact" class="hover:text-brand-600 transition-colors">Contact</a>
+        </div>
+
+        <!-- CTA & Quote Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button onclick="openModal('quoteModal')" class="px-5 py-2.5 rounded-xl border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-bold text-sm transition-all shadow-sm">
+            Get a Quote
+          </button>
+          <button onclick="openModal('demoModal')" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-sky-600 hover:from-brand-700 hover:to-sky-700 text-white font-bold text-sm shadow-lg shadow-sky-600/25 transition-all transform hover:-translate-y-0.5">
+            Book a Demo
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle mobile menu" class="lg:hidden text-slate-700 hover:text-brand-600 p-2 focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="lg:hidden hidden bg-white border-b border-slate-200 px-6 pt-2 pb-6 space-y-4 shadow-xl">
+      <a href="#home" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-600">Home</a>
+      <a href="#about" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-600">About Us</a>
+      <a href="#products" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-600">All Products</a>
+      <a href="#technology" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-600">R&D & Quality Standards</a>
+      <a href="#careers" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-600">Careers</a>
+      <a href="#contact" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-600">Contact Us</a>
+      <div class="pt-3 flex flex-col gap-2">
+        <button onclick="openModal('demoModal')" class="w-full py-3 text-center bg-brand-600 text-white font-bold rounded-xl shadow">Book a Demo</button>
+        <button onclick="openModal('quoteModal')" class="w-full py-3 text-center border border-slate-300 text-slate-700 font-bold rounded-xl">Get a Quote</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="relative overflow-hidden pt-12 pb-20 md:py-24 bg-gradient-to-b from-sky-50/70 via-white to-slate-50 pattern-grid">
+    <!-- Ambient Blur Background -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-sky-300/30 to-teal-300/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-100/80 border border-sky-200 text-brand-700 text-xs font-bold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-brand-600 animate-ping"></span>
+            Groundbreaking Medical Innovations
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display text-slate-900 leading-tight">
+            Making a Healthy India <br/>
+            <span class="bg-gradient-to-r from-brand-600 via-sky-600 to-teal-600 bg-clip-text text-transparent">Together For Everyone.</span>
+          </h1>
+
+          <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <span class="font-bold text-slate-900">BNP Wellness</span> (a unit of <span class="font-semibold text-slate-800">BNP Tradebiz Pvt Ltd</span>) is a pioneering medical technology company dedicated to developing innovative solutions that improve clinical outcomes, optimize doctor efficiency, and revolutionize healthcare delivery.
+          </p>
+
+          <!-- Highlights Pills -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-left max-w-lg mx-auto lg:mx-0">
+            <div class="flex items-start gap-3 p-3 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
+              <div class="w-9 h-9 rounded-xl bg-sky-100 text-brand-600 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-microchip text-base"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Ingenious Devices</h4>
+                <p class="text-xs text-slate-500">Uniquely devised & certified for specialized clinical purposes.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
+              <div class="w-9 h-9 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-hand-holding-medical text-base"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Easy & Portable</h4>
+                <p class="text-xs text-slate-500">Handy, smart interfaces operable with minimal operator training.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <button onclick="openModal('demoModal')" class="px-7 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold shadow-lg shadow-sky-600/30 transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+              <span>Ask for a Live Demo</span>
+              <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+            <a href="#products" class="px-7 py-3.5 rounded-xl bg-white border border-slate-300 hover:border-slate-400 text-slate-700 font-semibold shadow-sm transition-all hover:bg-slate-50">
+              Explore Products
+            </a>
+          </div>
+
+          <!-- Social Proof Bar -->
+          <div class="pt-6 border-t border-slate-200 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-slate-500 text-sm">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-hospital text-brand-600"></i>
+              <span><strong>35+</strong> Hospitals Across India</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved text-emerald-600"></i>
+              <span>ISO & ICS Compliant</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-user-doctor text-sky-600"></i>
+              <span>24/7 Support Network</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Interactive Showcase -->
+        <div class="lg:col-span-5 relative">
+          
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative circle -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-teal-500 rounded-3xl blur-xl opacity-30"></div>
+            
+            <div class="relative bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 space-y-6">
+              
+              <!-- Featured Device Header -->
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    Flagship Innovation
+                  </span>
+                  <h3 class="text-xl font-bold font-display text-slate-900 mt-2">FlowComp-NG</h3>
+                  <p class="text-xs text-slate-500">Digital Gravimetric Uroflowmeter ICS Compliant</p>
+                </div>
+                <div class="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-brand-600">
+                  <i class="fa-solid fa-chart-line text-xl"></i>
+                </div>
+              </div>
+
+              <!-- Interactive Live Metric Mockup -->
+              <div class="bg-slate-900 text-white rounded-2xl p-4 space-y-3 font-mono">
+                <div class="flex justify-between text-xs text-slate-400 border-b border-slate-800 pb-2">
+                  <span>REALTIME FLOW PATTERN</span>
+                  <span class="text-emerald-400 flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> SENSORS ACTIVE
+                  </span>
+                </div>
+                <!-- Mock Waveform SVG Graph -->
+                <div class="h-28 w-full flex items-end">
+                  <svg class="w-full h-full" viewBox="0 0 300 100" fill="none">
+                    <path d="M 0 95 Q 40 95, 70 85 T 120 20 T 160 15 T 210 60 T 260 90 L 300 95" stroke="#38bdf8" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <path d="M 0 95 Q 40 95, 70 85 T 120 20 T 160 15 T 210 60 T 260 90 L 300 95 L 300 100 L 0 100 Z" fill="url(#blueGrad)" opacity="0.25"/>
+                    <defs>
+                      <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#38bdf8"/>
+                        <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="grid grid-cols-3 gap-2 pt-1 text-center text-xs">
+                  <div class="bg-slate-800/80 p-1.5 rounded-lg">
+                    <div class="text-[10px] text-slate-400">Qmax</div>
+                    <div class="font-bold text-sky-400">26.4 mL/s</div>
+                  </div>
+                  <div class="bg-slate-800/80 p-1.5 rounded-lg">
+                    <div class="text-[10px] text-slate-400">Vvoid</div>
+                    <div class="font-bold text-emerald-400">380 mL</div>
+                  </div>
+                  <div class="bg-slate-800/80 p-1.5 rounded-lg">
+                    <div class="text-[10px] text-slate-400">Time</div>
+                    <div class="font-bold text-indigo-400">18.2 s</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick action banner inside card -->
+              <div class="flex items-center justify-between text-xs pt-1">
+                <span class="text-slate-500">Color header customizable ICS reports</span>
+                <button onclick="openProductModal('flowcomp')" class="text-brand-600 hover:text-brand-700 font-bold underline">
+                  View Tech Specs
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= METRICS COUNTERS ================= -->
+  <section class="py-12 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="text-3xl sm:text-4xl font-extrabold text-brand-600 font-display">10+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Years of Combined Excellence</div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="text-3xl sm:text-4xl font-extrabold text-teal-600 font-display">6+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Patented & Novel Devices</div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="text-3xl sm:text-4xl font-extrabold text-indigo-600 font-display">35+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Hospitals & Labs Equipped</div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="text-3xl sm:text-4xl font-extrabold text-emerald-600 font-display">99.8%</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Clinical Satisfaction Rate</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT BNP WELLNESS & TRADEBIZ ================= -->
+  <section id="about" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Composition -->
+        <div class="lg:col-span-5 relative order-2 lg:order-1">
+          <div class="relative mx-auto rounded-3xl overflow-hidden shadow-2xl bg-white border border-slate-200 p-3">
+            <div class="rounded-2xl overflow-hidden bg-gradient-to-br from-slate-800 to-brand-900 text-white p-8 space-y-6">
+              <div class="w-14 h-14 rounded-2xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-3xl">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <h3 class="text-2xl font-bold font-display">Precision Engineering for Indian Healthcare</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                BNP Wellness was founded to bridge the gap between heavy, cost-prohibitive imported medical gear and the practical day-to-day requirements of Indian clinicians.
+              </p>
+              <div class="pt-2 border-t border-slate-700/60 space-y-3">
+                <div class="flex items-center gap-3 text-sm text-slate-200">
+                  <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                  <span>Zero Radiation Tactile Screening Tools</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate-200">
+                  <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                  <span>Automatic Gravimetric Urodynamics</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate-200">
+                  <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                  <span>Targeted Oncological Electro-Chemotherapy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating badge -->
+          <div class="absolute -bottom-6 -right-4 bg-white rounded-2xl shadow-xl p-4 border border-slate-100 flex items-center gap-3 max-w-xs">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-award text-lg"></i>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Rigorous QA Standards</p>
+              <p class="text-[11px] text-slate-500">Every unit clinically verified prior to deployment.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="lg:col-span-7 space-y-6 order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
+            Who We Are
+          </div>
+          
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-slate-900 leading-tight">
+            Identifying Gaps in Medical Treatments & Developing Novel Solutions.
+          </h2>
+
+          <p class="text-slate-600 leading-relaxed text-base">
+            With a strong focus on research, validation, and design simplicity, <strong>BNP Wellness (BNP Tradebiz Pvt Ltd)</strong> has established a diverse portfolio of groundbreaking medical innovations that span across multiple clinical specialties: Urology, Gynaecology, Oncology, and Neonatology.
+          </p>
+
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Headquartered in Nagpur with regional operations extending across Pune, Mumbai, and Delhi, we bring together senior biomedical engineers, practicing clinicians, and healthcare administrators to design devices that are ergonomically sound, cost-effective, and exceptionally reliable.
+          </p>
+
+          <!-- Core Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+            <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <i class="fa-solid fa-dna text-brand-600 text-2xl mb-2"></i>
+              <h4 class="font-bold text-slate-800 text-sm">Multidisciplinary</h4>
+              <p class="text-xs text-slate-500 mt-1">Cross-pollination of electronics, mechanics & medical science.</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <i class="fa-solid fa-flask-vial text-teal-600 text-2xl mb-2"></i>
+              <h4 class="font-bold text-slate-800 text-sm">Validated R&D</h4>
+              <p class="text-xs text-slate-500 mt-1">Extensive clinical trials and ICS compliance verification.</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <i class="fa-solid fa-leaf text-emerald-600 text-2xl mb-2"></i>
+              <h4 class="font-bold text-slate-800 text-sm">Patient-Centric</h4>
+              <p class="text-xs text-slate-500 mt-1">Non-invasive, radiation-free and comfortable procedures.</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="openModal('quoteModal')" class="inline-flex items-center gap-2 font-bold text-brand-600 hover:text-brand-700 group text-sm">
+              <span>Partner with our distribution network</span>
+              <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCT CATALOG WITH FILTERING ================= -->
+  <section id="products" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="px-3.5 py-1.5 rounded-full bg-sky-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
+          Our Innovations & Products
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-slate-900">
+          Uniquely Devised For Rigorous Clinical Demands
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Every device undergoes strict quality control, multi-phase clinical validation, and meets health industry regulatory norms.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-10 mb-12">
+        <button onclick="filterProducts('all')" class="cat-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-brand-600 text-white shadow-sm" data-category="all">
+          All Products (6)
+        </button>
+        <button onclick="filterProducts('urology')" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200" data-category="urology">
+          Urology & Urodynamics
+        </button>
+        <button onclick="filterProducts('womens-health')" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200" data-category="womens-health">
+          Women's Oncology & Gynae
+        </button>
+        <button onclick="filterProducts('oncology')" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200" data-category="oncology">
+          Electro Chemotherapy
+        </button>
+        <button onclick="filterProducts('neonatal')" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200" data-category="neonatal">
+          Neonatal Care
+        </button>
+      </div>
+
+      <!-- Dynamic Product Cards Grid -->
+      <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. FlowComp-NG -->
+        <div class="product-card rounded-3xl bg-slate-50 border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-xl hover:border-brand-200 transition-all duration-300 group" data-category="urology">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-brand-700">Urology</span>
+              <span class="text-xs text-slate-400 font-mono">ICS Standard</span>
+            </div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-sky-400 text-white flex items-center justify-center text-2xl shadow-lg shadow-sky-600/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold font-display text-slate-900 group-hover:text-brand-600 transition-colors">FlowComp-NG</h3>
+              <p class="text-xs font-semibold text-brand-600 mt-0.5">Digital Gravimetric Uroflowmeter</p>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Automatic digital gravimetric flow measurement system providing colored, formatted reports with customizable hospital headers. Fully ICS compliant with frictionless operation.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> High-accuracy load-cell sensor</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Auto start/stop voiding cycle detection</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Instant multi-parameter graphical printing</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <button onclick="openProductModal('flowcomp')" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Detailed Specs <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+            <button onclick="requestQuoteFor('FlowComp-NG')" class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition-colors">
+              Inquire Now
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Urocomp 2000 ARM -->
+        <div class="product-card rounded-3xl bg-slate-50 border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-xl hover:border-brand-200 transition-all duration-300 group" data-category="urology">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-sky-100 text-brand-700">Urology / Diagnostics</span>
+              <span class="text-xs text-slate-400 font-mono">Multi-Channel</span>
+            </div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-600 to-sky-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-indigo-600/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-wave-square"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold font-display text-slate-900 group-hover:text-brand-600 transition-colors">Urocomp 2000 ARM</h3>
+              <p class="text-xs font-semibold text-brand-600 mt-0.5">Urodynamics Measuring System</p>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Complete urodynamic investigation platform powered by ARM processors. Delivers simultaneous cystometry, pressure flow studies, EMG recording, and urethral pressure profiling.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> High-speed 32-bit ARM processing</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Automated compliance & leak calculations</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Wireless or integrated transducer options</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <button onclick="openProductModal('urocomp')" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Detailed Specs <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+            <button onclick="requestQuoteFor('Urocomp 2000 ARM')" class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition-colors">
+              Inquire Now
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Cervaical (Colposcopy) -->
+        <div class="product-card rounded-3xl bg-slate-50 border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-xl hover:border-brand-200 transition-all duration-300 group" data-category="womens-health">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-pink-100 text-pink-700">Gynaecology</span>
+              <span class="text-xs text-slate-400 font-mono">Smart AI Optics</span>
+            </div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-pink-500 to-rose-400 text-white flex items-center justify-center text-2xl shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold font-display text-slate-900 group-hover:text-pink-600 transition-colors">Cervaical</h3>
+              <p class="text-xs font-semibold text-pink-600 mt-0.5">Making Cervical Exams Smarter</p>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Handheld smart digital colposcope providing crystal-clear visualization of cervical lesions, automated acetic acid timers, and rapid digital documentation for cervical cancer screening.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> High-definition medical-grade optical sensor</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Polarized green filter for vessel inspection</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Secure cloud archiving and tele-consultation</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <button onclick="openProductModal('cervaical')" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Detailed Specs <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+            <button onclick="requestQuoteFor('Cervaical Smart Exam')" class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition-colors">
+              Inquire Now
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Permeos -->
+        <div class="product-card rounded-3xl bg-slate-50 border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-xl hover:border-brand-200 transition-all duration-300 group" data-category="oncology">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-700">Oncology</span>
+              <span class="text-xs text-slate-400 font-mono">Electro-Chemo</span>
+            </div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-emerald-600/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold font-display text-slate-900 group-hover:text-emerald-600 transition-colors">Permeos</h3>
+              <p class="text-xs font-semibold text-emerald-600 mt-0.5">Targeted Electro-Chemotherapy (ECT)</p>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Fast-emerging oncological tool for targeted management of cutaneous and subcutaneous tumors. Uses reversible electroporation to amplify cellular uptake of chemotherapeutic agents.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Up to 1000x localized drug potentiation</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Minimally invasive outpatient applicability</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Microsecond calibrated pulse delivery</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <button onclick="openProductModal('permeos')" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Detailed Specs <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+            <button onclick="requestQuoteFor('Permeos ECT')" class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition-colors">
+              Inquire Now
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Giggles -->
+        <div class="product-card rounded-3xl bg-slate-50 border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-xl hover:border-brand-200 transition-all duration-300 group" data-category="neonatal">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-700">Neonatology</span>
+              <span class="text-xs text-slate-400 font-mono">NICU Care</span>
+            </div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-400 text-white flex items-center justify-center text-2xl shadow-lg shadow-amber-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-glasses"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold font-display text-slate-900 group-hover:text-amber-600 transition-colors">Giggles</h3>
+              <p class="text-xs font-semibold text-amber-600 mt-0.5">Neonatal Phototherapy Eye Protection</p>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Specially engineered soft eye goggles protecting infant retinas from harmful blue-light irradiance during bilirubin phototherapy in neonatal intensive care units.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 99.9% blue/UV irradiance filtration</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Skin-safe hypoallergenic medical foam</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Ergonomic self-retaining elastic band</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <button onclick="openProductModal('giggles')" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Detailed Specs <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+            <button onclick="requestQuoteFor('Giggles Goggles')" class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition-colors">
+              Inquire Now
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Smart Breast Exam -->
+        <div class="product-card rounded-3xl bg-slate-50 border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-xl hover:border-brand-200 transition-all duration-300 group" data-category="womens-health">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-pink-100 text-pink-700">Preventive Care</span>
+              <span class="text-xs text-slate-400 font-mono">Radiation Free</span>
+            </div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-rose-500 to-pink-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-rose-500/20 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-hand-dots"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold font-display text-slate-900 group-hover:text-rose-600 transition-colors">Smart Breast Exam</h3>
+              <p class="text-xs font-semibold text-rose-600 mt-0.5">Tactile Non-Invasive Screening</p>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Quick, painless, completely radiation-free breast tissue assessment device designed for early detection of clinically relevant tissue elasticity changes and palpable lesions.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Safe for women of all age brackets</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Real-time tactile elasticity map generation</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Zero discomfort, no compression required</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <button onclick="openProductModal('breast')" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Detailed Specs <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+            <button onclick="requestQuoteFor('Smart Breast Exam')" class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition-colors">
+              Inquire Now
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= HOW WE WORK & R&D PIPELINE ================= -->
+  <section id="technology" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-slate-800 text-sky-400 border border-slate-700 text-xs font-bold uppercase tracking-wider">
+          Engineering & Compliance
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display">
+          How BNP Wellness Works
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Our products address unmet clinical needs, optimize operative efficiency, and revolutionize healthcare delivery through structured 4-stage pipeline execution.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+        
+        <!-- Step 01 -->
+        <div class="bg-slate-800/80 border border-slate-700/60 rounded-3xl p-6 relative hover:border-sky-500 transition-colors">
+          <div class="text-4xl font-black text-sky-500/20 mb-2 font-mono">01.</div>
+          <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Research & Development</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Real-time insights directly gathered from practicing doctors, enabling early anomaly identification and ergonomic hardware optimization.
+          </p>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="bg-slate-800/80 border border-slate-700/60 rounded-3xl p-6 relative hover:border-teal-500 transition-colors">
+          <div class="text-4xl font-black text-teal-500/20 mb-2 font-mono">02.</div>
+          <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-stethoscope"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Testing & Validation</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Rigorous bench-top calibration, electrical stress analysis, and multi-hospital clinical trials ensuring unwavering measurement repeatability.
+          </p>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="bg-slate-800/80 border border-slate-700/60 rounded-3xl p-6 relative hover:border-emerald-500 transition-colors">
+          <div class="text-4xl font-black text-emerald-500/20 mb-2 font-mono">03.</div>
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Highest Quality Standard</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Precision industrial housing, medical-grade cabling, and shock-resistant electronic load cells manufactured under sterile environments.
+          </p>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="bg-slate-800/80 border border-slate-700/60 rounded-3xl p-6 relative hover:border-indigo-500 transition-colors">
+          <div class="text-4xl font-black text-indigo-500/20 mb-2 font-mono">04.</div>
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Certifications & Deploy</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Adherence to international urological standards (ICS) with on-site biomedical personnel training and perpetual life-cycle support.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Trust Bar -->
+      <div class="mt-16 pt-10 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h4 class="text-base font-bold text-slate-200">Are you a Hospital, Lab, or Biomedical Distributor?</h4>
+          <p class="text-xs text-slate-400">Join our growing ecosystem spanning Maharashtra, Delhi NCR, Tamil Nadu, and Karnataka.</p>
+        </div>
+        <button onclick="openModal('quoteModal')" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition-all">
+          Request Institutional Pricing
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS & CLINICAL STORIES ================= -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+          Client Stories
+        </span>
+        <h2 class="text-3xl font-extrabold font-display text-slate-900">
+          Trusted by 35+ Hospitals & Healthcare Clinics
+        </h2>
+        <p class="text-slate-500 text-xs sm:text-sm">
+          Hear from the medical professionals using our diagnostic and therapeutic innovations across India.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
+        
+        <!-- Story 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              "BNP Wellness has been a game-changer in the health sector! Their FlowComp-NG uroflowmeter gives ultra-precise graphs without software lags. It has improved our OPD workflow remarkably."
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-sky-100 text-brand-700 flex items-center justify-center font-bold text-sm">
+              AS
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Dr. Amit Singh</h4>
+              <p class="text-xs text-slate-400">Urologist • Mumbai, MH</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              "They truly live up to their commitment to health and well-being. The Cervaical screening device has made our community outreach camps significantly more efficient and accurate."
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-pink-100 text-pink-700 flex items-center justify-center font-bold text-sm">
+              NJ
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Dr. Nilam Jain</h4>
+              <p class="text-xs text-slate-400">Gynaecology Specialist • Pune, MH</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              "BNP Wellness is a brand I trust for its commitment to clinical quality. Their engineering team in Nagpur provided complete demonstration, calibration, and swift ongoing maintenance."
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">
+              PP
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Dr. Priya Pande</h4>
+              <p class="text-xs text-slate-400">Clinical Director • Chennai, TN</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CAREERS SECTION ================= -->
+  <section id="careers" class="py-20 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Column: Career Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="px-3.5 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
+            Join Our Team
+          </span>
+          <h2 class="text-3xl font-extrabold font-display text-slate-900">
+            Shape The Future of Medical Technology in India
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            At BNP Wellness & BNP Tradebiz, we are expanding our engineering, sales, and clinical training divisions across Nagpur, Pune, and New Delhi.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-money-bill-wave text-sm"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Competitive Compensation</h4>
+                <p class="text-xs text-slate-500">Industry-leading packages and performance incentives.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-arrow-trend-up text-sm"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Accelerated Career Growth</h4>
+                <p class="text-xs text-slate-500">Direct exposure to patented biomedical instrumentation.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-users text-sm"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-800">Impactful Culture</h4>
+                <p class="text-xs text-slate-500">Work directly with visionary medical professionals and engineers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Open Positions List -->
+        <div class="lg:col-span-7 space-y-4">
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Current Openings</h3>
+
+          <!-- Role 1 -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold text-brand-600 uppercase">Sales & Marketing</span>
+                <span class="text-slate-300">•</span>
+                <span class="text-xs text-slate-500">Nagpur / Pune / Mumbai</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mt-1">Medical Marketing Executive</h4>
+              <p class="text-xs text-slate-500 mt-1">Hospital demonstrations & doctor relations for FlowComp-NG & Cervaical.</p>
+            </div>
+            <button onclick="applyJob('Medical Marketing Executive')" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold whitespace-nowrap transition-colors">
+              Apply Now
+            </button>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold text-teal-600 uppercase">Engineering & R&D</span>
+                <span class="text-slate-300">•</span>
+                <span class="text-xs text-slate-500">Nagpur Head Office</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mt-1">Assistant Biomedical Engineer</h4>
+              <p class="text-xs text-slate-500 mt-1">Calibration, load cell assembly, firmware validation & quality inspection.</p>
+            </div>
+            <button onclick="applyJob('Assistant Biomedical Engineer')" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold whitespace-nowrap transition-colors">
+              Apply Now
+            </button>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold text-indigo-600 uppercase">Operations</span>
+                <span class="text-slate-300">•</span>
+                <span class="text-xs text-slate-500">Nagpur / Delhi</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mt-1">Regional Operations Manager</h4>
+              <p class="text-xs text-slate-500 mt-1">Distributor channels, post-installation support & hospital SLAs.</p>
+            </div>
+            <button onclick="applyJob('Regional Operations Manager')" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold whitespace-nowrap transition-colors">
+              Apply Now
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & LOCATION ================= -->
+  <section id="contact" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Information -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="px-3.5 py-1 rounded-full bg-sky-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
+            Contact Information
+          </span>
+          <h2 class="text-3xl font-extrabold font-display text-slate-900">
+            Get In Touch With Our Medical Technology Specialists
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Need device specifications, tenders, hospital trial units, or dealership information? Our engineering and sales team will respond promptly.
+          </p>
+
+          <div class="space-y-5 pt-2">
+            <!-- Office Address -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-sky-100 text-brand-600 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-location-dot text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Head Office (Nagpur)</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  3B, Madhav Tower, 2nd Floor, Above Hero Unnati Showroom, Chhapru Nagar Square, C.A. Road, Nagpur - 440008, Maharashtra, India.
+                </p>
+              </div>
+            </div>
+
+            <!-- Regional Hubs -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-building text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Regional Branches</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  <strong>Pune:</strong> Shivajinagar & Kothrud Hub<br/>
+                  <strong>Delhi:</strong> New Delhi Distribution Office<br/>
+                  <strong>Corporate Entity:</strong> BNP Tradebiz Private Limited
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone and Email -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-phone-volume text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Direct Contacts</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  Phone: <a href="tel:+919960097111" class="text-brand-600 font-bold hover:underline">+91 99600 97111</a><br/>
+                  Email: <a href="mailto:bnpwellness@gmail.com" class="text-brand-600 font-bold hover:underline">bnpwellness@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Working Hours badge -->
+          <div class="p-4 rounded-2xl bg-white border border-slate-200 text-xs text-slate-500 flex items-center gap-3">
+            <i class="fa-regular fa-clock text-brand-600 text-lg"></i>
+            <div>
+              <span class="font-bold text-slate-700">Customer Support Hours:</span>
+              <p>Monday - Saturday: 10:00 AM to 6:00 PM IST</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-slate-200">
+            <h3 class="text-xl font-bold font-display text-slate-900 mb-2">Send Us an Inquiry</h3>
+            <p class="text-xs text-slate-500 mb-6">Fill in the form below and an engineer will connect with you.</p>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Full Name *</label>
+                  <input type="text" required placeholder="Dr. / Mr. / Ms." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+                  <input type="tel" required placeholder="+91 98000 00000" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Email Address *</label>
+                  <input type="email" required placeholder="doctor@clinic.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Organization / Hospital *</label>
+                  <input type="text" required placeholder="Hospital / Diagnostic Centre" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Product of Interest</label>
+                <select class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                  <option value="General Inquiry">Select a Device</option>
+                  <option value="FlowComp-NG Uroflowmeter">FlowComp-NG (Digital Uroflowmeter)</option>
+                  <option value="Urocomp 2000 ARM">Urocomp 2000 ARM Urodynamic System</option>
+                  <option value="Cervaical Colposcope">Cervaical (Smart Colposcopy)</option>
+                  <option value="Permeos ECT">Permeos (Electro-Chemotherapy)</option>
+                  <option value="Giggles Goggles">Giggles (Neonatal Eye Goggles)</option>
+                  <option value="Smart Breast Exam">Smart Breast Exam Device</option>
+                  <option value="Distributorship">Dealership / Distributorship Opportunity</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Your Message / Requirements</label>
+                <textarea rows="4" placeholder="Mention specifications required, quantities, or clinic location..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md shadow-brand-600/30 transition-all flex items-center justify-center gap-2">
+                <span>Submit Inquiry</span>
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+              </button>
+            </form>
+
+            <div id="contactSuccessMsg" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs">
+              <strong>Thank you!</strong> Your inquiry has been logged. Our Nagpur/Pune team will contact you shortly.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= NEWSLETTER & FAQ ================= -->
+  <section class="py-16 bg-brand-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-2">
+          <h3 class="text-2xl font-bold font-display">Don't Miss Our Future Updates!</h3>
+          <p class="text-slate-300 text-xs sm:text-sm">
+            Subscribe for clinical test results, novel device announcements, and product updates from BNP Wellness.
+          </p>
+        </div>
+
+        <div class="lg:col-span-5">
+          <form onsubmit="handleNewsletter(event)" class="flex flex-col sm:flex-row gap-2">
+            <input type="email" required placeholder="Enter your email address" class="px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-400 grow">
+            <button type="submit" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-900 font-bold text-xs uppercase tracking-wider transition-colors shrink-0">
+              Subscribe
+            </button>
+          </form>
+          <p id="nlMsg" class="hidden text-xs text-sky-300 mt-2">✓ Subscribed successfully! Thank you for staying connected.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-14 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white font-bold text-xl">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <span class="font-display font-black text-xl text-white tracking-tight">BNP <span class="text-brand-500">WELLNESS</span></span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            BNP Wellness is a medical technology manufacturing brand dedicated to developing ingenious, easy-to-use healthcare devices. A division of <strong>BNP Tradebiz Private Limited</strong>.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-slate-400">
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:text-white hover:bg-brand-600 transition-colors"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:text-white hover:bg-brand-600 transition-colors"><i class="fa-brands fa-twitter text-xs"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:text-white hover:bg-brand-600 transition-colors"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:text-white hover:bg-brand-600 transition-colors"><i class="fa-brands fa-instagram text-xs"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#products" class="hover:text-white transition-colors">Medical Devices</a></li>
+            <li><a href="#technology" class="hover:text-white transition-colors">R&D and Testing</a></li>
+            <li><a href="#careers" class="hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-4">Innovations</h4>
+          <ul class="space-y-2">
+            <li><a href="#products" onclick="openProductModal('flowcomp')" class="hover:text-white transition-colors">FlowComp-NG</a></li>
+            <li><a href="#products" onclick="openProductModal('urocomp')" class="hover:text-white transition-colors">Urocomp 2000 ARM</a></li>
+            <li><a href="#products" onclick="openProductModal('cervaical')" class="hover:text-white transition-colors">Cervaical Colposcopy</a></li>
+            <li><a href="#products" onclick="openProductModal('permeos')" class="hover:text-white transition-colors">Permeos ECT</a></li>
+            <li><a href="#products" onclick="openProductModal('giggles')" class="hover:text-white transition-colors">Giggles Eye Goggles</a></li>
+            <li><a href="#products" onclick="openProductModal('breast')" class="hover:text-white transition-colors">Smart Breast Exam</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact summary -->
+        <div>
+          <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-4">Office Details</h4>
+          <p class="text-[11px] leading-relaxed text-slate-400">
+            3B, Madhav Tower, 2nd Floor, Above Hero Unnati Showroom, Chhapru Nagar Sq, C.A. Road, Nagpur - 440008, MS, India.
+          </p>
+          <div class="mt-3 space-y-1">
+            <p><strong>Tel:</strong> +91 99600 97111</p>
+            <p><strong>Email:</strong> bnpwellness@gmail.com</p>
+            <p><strong>CIN:</strong> U51900MH2015PTC269325</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <p>© 2026 BNP Wellness. All Rights Reserved. Powered by BNP Tradebiz Private Limited.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-300">Terms of Service</a>
+          <a href="#" class="hover:text-slate-300">Compliance & ICS Standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS & INTERACTIVE POPUPS ================= -->
+
+  <!-- 1. Book A Demo Modal -->
+  <div id="demoModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('demoModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-sky-100 text-brand-600 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold font-display text-slate-900">Schedule a Device Demo</h3>
+          <p class="text-xs text-slate-500">Live on-site or virtual demonstration with our technical specialists</p>
+        </div>
+      </div>
+
+      <form onsubmit="handleDemoSubmit(event)" class="space-y-3 pt-2">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+          <input type="text" required placeholder="Dr. John Doe" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+            <input type="tel" required placeholder="+91 99600 00000" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">City / Region *</label>
+            <input type="text" required placeholder="e.g. Nagpur / Pune / Delhi" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Product For Demo *</label>
+          <select id="demoProductSelect" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <option>FlowComp-NG (Uroflowmeter)</option>
+            <option>Urocomp 2000 ARM (Urodynamics)</option>
+            <option>Cervaical (Smart Colposcopy)</option>
+            <option>Permeos (Electro-Chemotherapy)</option>
+            <option>Giggles (Phototherapy Protection)</option>
+            <option>Smart Breast Exam</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Preferred Date</label>
+            <input type="date" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Demo Mode</label>
+            <select class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              <option>In-Clinic Demonstration</option>
+              <option>Live Video / Virtual Demo</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Hospital / Clinic Name</label>
+          <input type="text" placeholder="e.g. Apollo / Apex Hospital" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm">
+        </div>
+        
+        <button type="submit" class="w-full mt-3 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-colors">
+          Confirm Demo Request
+        </button>
+      </form>
+      <div id="demoSuccess" class="hidden mt-3 p-3 bg-emerald-50 text-emerald-800 text-xs rounded-xl text-center">
+        Demo booked successfully! We will contact you to confirm the time.
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Get Quote Modal -->
+  <div id="quoteModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('quoteModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold font-display text-slate-900">Request Official Quotation</h3>
+          <p class="text-xs text-slate-500">Commercial pricing, tender specs, and warranty details</p>
+        </div>
+      </div>
+
+      <form onsubmit="handleQuoteSubmit(event)" class="space-y-3 pt-2">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Contact Name & Designation *</label>
+          <input type="text" required placeholder="Dr. / Purchase Head" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+            <input type="tel" required placeholder="+91 99600 00000" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Email ID *</label>
+            <input type="email" required placeholder="purchase@hospital.org" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Product Requested *</label>
+          <input id="quoteProductInput" type="text" required value="FlowComp-NG Uroflowmeter" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Estimated Quantity</label>
+            <select class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm">
+              <option>1 Unit</option>
+              <option>2 - 5 Units</option>
+              <option>Bulk / Tender (6+ Units)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">GST / Institution Type</label>
+            <select class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm">
+              <option>Private Clinic / Hospital</option>
+              <option>Government / Trust Hospital</option>
+              <option>Distributor / Reseller</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Delivery Destination / City</label>
+          <input type="text" placeholder="e.g. Nagpur / Mumbai / Bengaluru" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm">
+        </div>
+
+        <button type="submit" class="w-full mt-3 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition-colors">
+          Send Quotation Request
+        </button>
+      </form>
+      <div id="quoteSuccess" class="hidden mt-3 p-3 bg-emerald-50 text-emerald-800 text-xs rounded-xl text-center">
+        Quotation inquiry received. Our commercial sales executive will email the rate card!
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Dynamic Product Technical Specs Modal -->
+  <div id="productDetailModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('productDetailModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div id="modalProductContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NOTIFICATION TOAST ================= -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs border border-slate-700">
+      <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+      <span id="toastMsg">Action successfully completed</span>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // Product Database with rich clinical technical specs
+    const productData = {
+      flowcomp: {
+        title: "FlowComp-NG",
+        tagline: "Digital Automatic Gravimetric Type Uroflowmeter",
+        category: "Urology Diagnostics",
+        badgeColor: "bg-sky-100 text-brand-700",
+        icon: "fa-water",
+        description: "The FlowComp-NG provides high-precision gravimetric flow assessment compliant with International Continence Society (ICS) standards. It generates clear, multi-color diagnostic reports with customizable hospital headers.",
+        specs: [
+          { label: "Operating Principle", value: "Gravimetric load-cell sensing" },
+          { label: "Flow Measurement Range", value: "0 to 50 mL/s (Accuracy ± 1%)" },
+          { label: "Volume Range", value: "0 to 1000 mL (Accuracy ± 1%)" },
+          { label: "ICS Parameters", value: "Qmax, Qavg, Flow Time, Voiding Time, Time to Qmax, Voided Volume" },
+          { label: "Reporting", value: "Full Color graphical report with customizable hospital/doctor header" },
+          { label: "Connectivity", value: "High-speed USB & Wireless module available" },
+          { label: "Chamber", value: "Washable, hygienic medical-grade urine container" }
+        ],
+        clinicalAdvantage: "Most easy-to-operate uroflowmeter with auto-sensor zeroing, zero manual calculation lag, and patient comfort height-adjustable chair compatibility."
+      },
+      urocomp: {
+        title: "Urocomp 2000 ARM",
+        tagline: "Advanced Urodynamic Measuring System",
+        category: "Advanced Urology",
+        badgeColor: "bg-indigo-100 text-indigo-700",
+        icon: "fa-wave-square",
+        description: "Powered by modern 32-bit ARM RISC processors, the Urocomp 2000 is engineered for comprehensive lower urinary tract examinations, combining Cystometry, EMG, UPP, and Pressure-Flow studies.",
+        specs: [
+          { label: "Processor Architecture", value: "Dedicated ARM embedded real-time processing" },
+          { label: "Channels", value: "Pves, Pabd, Pdet (calculated), Flow, Volume, Infused Volume, EMG" },
+          { label: "Infusion Pump", value: "Microprocessor controlled peristaltic pump (1 - 100 mL/min)" },
+          { label: "EMG Module", value: "High-sensitivity surface electrode bio-amplifier with noise notch filter" },
+          { label: "Puller System", value: "Optional motorized urethral catheter puller with millimeter precision" },
+          { label: "Standards", value: "Full compliance with ICS nomograms (Griffiths, Abrams-Griffiths)" }
+        ],
+        clinicalAdvantage: "Reduces clinical setup time, automates compliance calculations, and provides clear diagnostic differentiation between bladder outlet obstruction and detrusor underactivity."
+      },
+      cervaical: {
+        title: "Cervaical Smart Exam",
+        tagline: "Making Cervical Screening Smarter & Accessible",
+        category: "Women's Health / Oncology",
+        badgeColor: "bg-pink-100 text-pink-700",
+        icon: "fa-eye",
+        description: "A compact, digital colposcopy solution designed for early detection of cervical dysplasia and precancerous lesions during routine gynecological screenings or rural health camps.",
+        specs: [
+          { label: "Optical Resolution", value: "Full HD CMOS sensor with digital 16x zoom" },
+          { label: "Illumination", value: "Multi-point cool white medical LEDs with green chromatic filter" },
+          { label: "Timing Aid", value: "Built-in Acetic Acid & Lugol's iodine application timer" },
+          { label: "Image Capture", value: "Single-click ergonomic freeze-frame and live side-by-side comparison" },
+          { label: "Data Security", value: "HIPAA compliant local encrypted storage & PDF export" }
+        ],
+        clinicalAdvantage: "Lightweight, handheld, and battery-assisted, enabling gynecologists and field clinicians to conduct rapid exams without bulky colposcopy stands."
+      },
+      permeos: {
+        title: "Permeos Electro-Chemotherapy",
+        tagline: "Cutaneous & Subcutaneous Tumor Interventions",
+        category: "Oncology Solutions",
+        badgeColor: "bg-emerald-100 text-emerald-700",
+        icon: "fa-bolt-lightning",
+        description: "Permeos uses calibrated microsecond electrical pulses to reversibly increase tumor cell membrane permeability, drastically increasing the intracellular uptake of bleomycin or cisplatin.",
+        specs: [
+          { label: "Pulse Characteristics", value: "Calibrated high-voltage microsecond square pulses" },
+          { label: "Target Tumors", value: "Cutaneous metastases, melanoma, head & neck carcinomas, basal cell" },
+          { label: "Safety Controls", value: "Pre-pulse impedance verification & automatic voltage cutoff" },
+          { label: "Electrodes", value: "Hexagonal, plate, and linear needle electrode arrays" },
+          { label: "Clinical Mode", value: "Outpatient or daycare surgical integration" }
+        ],
+        clinicalAdvantage: "Spares healthy surrounding tissue while yielding high objective response rates for tumors that have exhausted standard radio or systemic chemotherapy options."
+      },
+      giggles: {
+        title: "Giggles Phototherapy Goggles",
+        tagline: "Neonatal Ophthalmic Protection",
+        category: "Neonatology / NICU",
+        badgeColor: "bg-amber-100 text-amber-700",
+        icon: "fa-glasses",
+        description: "Essential neonatal intensive care protective eyewear engineered to shield delicate infant retinas from intensive blue irradiance during hyperbilirubinemia phototherapy.",
+        specs: [
+          { label: "Filtration", value: "Blocks 99.9% of UV and 400-500nm blue light wavelengths" },
+          { label: "Material", value: "Hypoallergenic biocompatible grade soft foam with breathable backing" },
+          { label: "Fastening", value: "Non-adhesive soft elastic headband adjustable to all cranial shapes" },
+          { label: "Sizes", value: "Pre-term, Full-term, and Large infant variants" },
+          { label: "Packaging", value: "Sterile individual blister packs" }
+        ],
+        clinicalAdvantage: "Does not slip or exert excessive pressure on premature infant ocular structures, avoiding skin bruising or dislocation during phototherapy sessions."
+      },
+      breast: {
+        title: "Smart Breast Exam",
+        tagline: "Quick, Painless, Radiation-Free Tactile Screening",
+        category: "Preventive Women's Care",
+        badgeColor: "bg-rose-100 text-rose-700",
+        icon: "fa-hand-dots",
+        description: "A gentle, radiation-free tactile breast screening solution that senses differences in tissue compliance and elasticity to identify abnormal lumps at an early stage.",
+        specs: [
+          { label: "Principle", value: "High-density piezo-electric tactile sensor matrix" },
+          { label: "Radiation Level", value: "Zero radiation (completely safe for young women & expectant mothers)" },
+          { label: "Exam Duration", value: "Less than 5 minutes for bilateral examination" },
+          { label: "Readout", value: "Real-time color-coded 2D tissue compliance contour" },
+          { label: "Portability", value: "Rechargeable Li-ion battery with wireless tablet sync" }
+        ],
+        clinicalAdvantage: "Overcomes mammography discomfort and breast density limitations, opening opportunities for community breast cancer screenings anywhere."
+      }
+    };
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on click link
+    document.querySelectorAll('#mobileMenu a').forEach(item => {
+      item.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Filter Products
+    function filterProducts(category) {
+      const cards = document.querySelectorAll('.product-card');
+      const buttons = document.querySelectorAll('.cat-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+          btn.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+          btn.classList.remove('bg-slate-100', 'text-slate-600');
+        } else {
+          btn.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+          btn.classList.add('bg-slate-100', 'text-slate-600');
+        }
+      });
+
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (category === 'all' || cardCat === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Modal Control Functions
+    function openModal(modalId) {
+      const el = document.getElementById(modalId);
+      if (el) {
+        el.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const el = document.getElementById(modalId);
+      if (el) {
+        el.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Close on background click
+    window.addEventListener('click', (e) => {
+      ['demoModal', 'quoteModal', 'productDetailModal'].forEach(id => {
+        const modal = document.getElementById(id);
+        if (e.target === modal) {
+          closeModal(id);
+        }
+      });
+    });
+
+    // Open Product Modal
+    function openProductModal(productId) {
+      const product = productData[productId];
+      if (!product) return;
+
+      const container = document.getElementById('modalProductContent');
+      let specsHtml = product.specs.map(s => `
+        <tr class="border-b border-slate-100 text-xs">
+          <td class="py-2 font-bold text-slate-700 w-2/5">${s.label}</td>
+          <td class="py-2 text-slate-600">${s.value}</td>
+        </tr>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="space-y-5">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full text-xs font-bold ${product.badgeColor}">
+              ${product.category}
+            </span>
+            <span class="text-xs text-slate-400 font-medium">BNP Wellness Validated</span>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold font-display text-slate-900">${product.title}</h3>
+            <p class="text-xs text-brand-600 font-semibold mt-0.5">${product.tagline}</p>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            ${product.description}
+          </p>
+
+          <div class="bg-sky-50/70 p-4 rounded-2xl border border-sky-100">
+            <h4 class="text-xs font-bold text-slate-800 mb-1 flex items-center gap-1.5">
+              <i class="fa-solid fa-lightbulb text-sky-600"></i> Clinical Advantage
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">${product.clinicalAdvantage}</p>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-2">Technical Specifications</h4>
+            <table class="w-full text-left">
+              <tbody>${specsHtml}</tbody>
+            </table>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-3 items-center justify-between">
+            <button onclick="requestQuoteFor('${product.title}'); closeModal('productDetailModal');" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shadow-md transition-colors">
+              Request Price for ${product.title}
+            </button>
+            <button onclick="openModal('demoModal'); closeModal('productDetailModal');" class="px-5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs transition-colors">
+              Book Demonstration
+            </button>
+          </div>
+        </div>
+      `;
+
+      openModal('productDetailModal');
+    }
+
+    // Action wrappers
+    function requestQuoteFor(prodName) {
+      const input = document.getElementById('quoteProductInput');
+      if (input) input.value = prodName;
+      openModal('quoteModal');
+    }
+
+    function applyJob(jobTitle) {
+      showToast(`Applying for: ${jobTitle}. Opening contact channel...`);
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Form handlers
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('contactSuccessMsg');
+      msg.classList.remove('hidden');
+      e.target.reset();
+      showToast("Inquiry submitted! Our engineering team will call you.");
+    }
+
+    function handleDemoSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('demoSuccess');
+      msg.classList.remove('hidden');
+      setTimeout(() => {
+        closeModal('demoModal');
+        msg.classList.add('hidden');
+        e.target.reset();
+      }, 2000);
+      showToast("Demo request logged successfully.");
+    }
+
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('quoteSuccess');
+      msg.classList.remove('hidden');
+      setTimeout(() => {
+        closeModal('quoteModal');
+        msg.classList.add('hidden');
+        e.target.reset();
+      }, 2000);
+      showToast("Official quotation request dispatched.");
+    }
+
+    function handleNewsletter(e) {
+      e.preventDefault();
+      document.getElementById('nlMsg').classList.remove('hidden');
+      e.target.reset();
+      showToast("Subscribed to BNP Wellness bulletins.");
+    }
+
+    // Toast Utility
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
